@@ -1,25 +1,31 @@
-# DeepLense GSoC 2026 - Evaluation Tests
+# ML4SCI DeepLense — Evaluation Test Submissions
 
-**Author:** Prakhar Prakarsh
-**Email:** prakharprakarsh@gmail.com
+**Author:** Prakhar Prakarsh · [prakharprakarsh@gmail.com](mailto:prakharprakarsh@gmail.com)
 **Organisation:** Machine Learning for Science (ML4SCI)
-**Projects:** DEEPLENSE6 (Gravitational Lens Finding) and DEEPLENSE4 (Foundation Model)
+**Context:** Evaluation tasks completed for the ML4SCI DeepLense GSoC 2026 application
+(DEEPLENSE6 — Gravitational Lens Finding; DEEPLENSE4 — Foundation Model).
 
-## Test Results
+Gravitational-lensing image classification using deep learning (PyTorch, ResNet-18,
+transfer learning). Two tasks: multi-class classification and binary lens finding
+under extreme class imbalance.
 
-### Common Test I: Multi-Class Classification
-- **Model:** ResNet-18 (ImageNet pretrained, fine-tuned)
+## Results
+
+### Common Test I — Multi-Class Classification
+- **Model:** ResNet-18 (ImageNet-pretrained, fine-tuned)
 - **Accuracy:** 92.64%
-- **Macro-Average AUC:** 0.9869
+- **Macro-average AUC:** 0.9869
 
-### Specific Test V: Lens Finding
-- **Model:** ResNet-18 with weighted CrossEntropyLoss
-- **AUC Score:** 0.9868
-- **Recall at FPR=0.01:** 84.6%
-- **Best F1-Score:** 0.7324 (optimized threshold)
+### Specific Test V — Lens Finding
+- **Model:** ResNet-18 with weighted cross-entropy loss
+- **AUC:** 0.9868
+- **Recall @ FPR = 0.01:** 84.6%
+- **Best F1 (optimised threshold):** 0.7324
 
 ## Repository Contents
-- `Common_Test_I_MultiClass_Classification.ipynb` - 3-class classification of lensing images
-- `Test_V_Lens_Finding.ipynb` - Binary lens finding with extreme class imbalance
-- `resnet18_deeplense_classifier.pth` - Trained model weights (Test I)
-- `resnet18_lens_finder.pth` - Trained model weights (Test V)
+- `Common_Test_I_MultiClass_Classification.ipynb` — 3-class classification of lensing images
+- `Test_V_Lens_Finding-.ipynb` — binary lens finding under extreme class imbalance
+
+## Reproducing
+Open either notebook in Jupyter or Google Colab and run top to bottom.
+Dependencies: `torch`, `torchvision`, `numpy`, `scikit-learn`, `matplotlib`.
