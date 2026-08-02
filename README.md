@@ -23,8 +23,9 @@ under extreme class imbalance.
 - **Best F1 (optimised threshold):** 0.7324
 
 ## Repository Contents
+- `README.md` — this file
 - `Common_Test_I_MultiClass_Classification.ipynb` — 3-class classification of lensing images
-- `Test_V_Lens_Finding-.ipynb` — binary lens finding under extreme class imbalance
+- `Test_V_Lens_Finding.ipynb` — binary lens finding under extreme class imbalance
 
 ## Reproducing
 Open either notebook in Jupyter or Google Colab and run top to bottom.
